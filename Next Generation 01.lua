@@ -66,38 +66,6 @@ _G.Setting = {
     ['Auto Close Ui'] = false 
 }
 
-_G.On_Next_Generation = true
-if _G.On_Next_Generation then
-    _G.Switch_Hub_Series_R = true
-    _G.Quest = {
-        ['RGB'] = getgenv().Quest['RGB Haki']
-    }
-    if getgenv().Quest['Evo Race']['Evo V3'] then
-		_G.Quest['Evo Race V1'] = true
-		_G.Quest['Evo Race V2'] = true
-		_G.Quest['Evo Race V3'] = true
-    end
-    _G.Main = {
-        ['FPS Booster'] = getgenv().Setting['FPS Booster'],
-        ['White Screen'] = getgenv().Setting['White Screen'],
-        ['Close Ui'] = getgenv().Setting['Disible Gui'],
-        ['AFK Check'] = getgenv().Setting['AFK Check'],
-        ['Lock Fruit'] = getgenv().Setting['Lock Fruit'],
-        ['Rejoin'] = getgenv().Setting['Rejoin'],
-        ['Bring Fruit'] = getgenv().Fruit['Bring Fruit'],
-        ['Kill Boss'] = getgenv().Quest['Kill Boss']
-    }
-    _G.Melee = getgenv().Melee
-    _G.Sword = getgenv().Sword
-    _G.Gun = getgenv().Gun
-    _G.Mastery = getgenv().Mastery
-    _G.Fruit_Main = { -- เลือกผลหลักและเควสโมจิตื่น
-        ['Main'] = getgenv().Fruit['Main'],
-        ['Quest Dough Awaken'] = getgenv().Quest['Quest Dough Awaken']['Enabled'],
-        ['Fast Dough Awaken'] = getgenv().Quest['Quest Dough Awaken']['Fast Mode']
-    }
-    _G.Fruit = getgenv().Fruit['Select Fruit']
-end
 local Bijan = false
 local Bijan = loadstring(game:HttpGet("https://raw.githubusercontent.com/mondeef/s/main/README.lua"))()
 if type(Bijan) == 'table' then
