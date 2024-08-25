@@ -93,23 +93,6 @@ if _G.Switch_Hub_Series_R then
 	end
 	task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/middle.lua'))() end)
 
-	-- RAM
-	if _G.Quest == nil then
-		_G.Quest = {
-			['RGB'] = false
-		}
-	end
-	if _G.Fruit_Main['Main'] == nil then
-	elseif type(_G.Fruit_Main['Main']) == 'table' then
-		for i,v in next,_G.Fruit_Main['Main'] do
-			table.insert(_G.Fruit,v)
-		end
-	else -- add table
-		local xp = _G.Fruit_Main['Main']
-		table.insert(_G.Fruit,xp)
-		_G.Fruit_Main['Main'] = {}
-		table.insert(_G.Fruit_Main['Main'],xp)
-	end
 	-- FPS Booster
 	--UserSettings():GetService("UserGameSettings").MasterVolume = 0
 
