@@ -1,3 +1,22 @@
+getgenv().Faster = { 
+    ['CDK Super Fast'] = true, -- Spawn Admin / เสกแอดมิน
+    ['Buy Color Haki'] = 3 -- Legendary Haki Max 3
+}
+
+getgenv().RAM = { -- Log Des 
+    ['Enabled'] = false, 
+    ['Delay'] = 600 
+}
+
+getgenv().Setting = { -- Setting Script / ตั้งค่าสคริปต์
+    ['FPS Booster'] = false,
+    ['White Screen'] = true,
+    ['Disible Gui'] = false,
+    ['Lock Fruit'] = 1000000,
+    ['AFK Check'] = 150,
+    ['Rejoin'] = true
+}
+
 -- Quest / เควส
 _G.Quest = { 
     ['RGB Aura Haki'] = true,
@@ -13,9 +32,6 @@ _G.Race = {
 }
 
 -- Melee / หมัด
-_G.Melee = { 
-    ['Godhuman'] = true
-}
 
 -- Sword / ดาบ
 _G.Sword = { 
@@ -47,23 +63,50 @@ _G.Gun = {
     ['Serpent Bow'] = true
 }
 
--- Devil Fruit / ผลปีศาจ
-_G.Fruit = { 
-    ['Main Fruit'] = {'Kitsune-Kitsune','T-Rex-T-Rex','Mammoth-Mammoth'},
-    ['Select Fruit'] = {'Dark-Dark','Magma-Magma'}
+getgenv().Fruit = { -- Select Fruit / เลือกผลที่ต้องการ
+    ['Bring Fruit'] = true 
+}
+
+getgenv().Melee = { -- Farm Melee / ฟามหมัด
+    ['Superhuman'] = true,
+    ['Death Step'] = true,
+    ['Sharkman Karate'] = true,
+    ['Electric Claw'] = true,
+    ['Dragon Talon'] = true,
+    ['Godhuman'] = true
 }
 
 -- Mastery / มาสเตอรี่
-_G.Mastery = { 
+getgenv().Mastery = { -- Farm Mastery / ฟามมาสเตอรี่
     ['Melee'] = true,
+    ['Fruit'] = true,
     ['Sword'] = true,
-    ['Fruit'] = true
-}
+    ['Setting Sword'] = { 
+        [1] = "Tushita",
+        [2] = "Hallow Scythe",
+        [3] = "Spikey Trident",
+        [4] = "Dark Dagger",
+        [5] = "Buddy Sword",
+        [6] = "Yama",
+        [7] = "Shisui",
+        [8] = "Saddi",
+        [9] = "Shark Anchor",
+        [10] = "True Triple Katana",
+        [11] = "Cursed Dual Katana",
+        [12] = "Midnight Blade",
+        [13] = "Rengoku",
+        [14] = "Saber",
+        [15] = "Canvander",
+		[16] = 'Wando'
+    },
 
--- Setting / ตั้งค่าหลัก
-_G.Setting = {
-    ['FPS Booster'] = true,
-    ['Auto Close Ui'] = false 
+    ['Gun'] = false,
+    ['Setting Gun'] = { 
+        [1] = 'Soul Guitar',
+        [2] = 'Kabucha',
+        [3] = 'Acidum Rifle',
+        [4] = 'Serpent Bow'
+    }
 }
 
 local Bijan = false
