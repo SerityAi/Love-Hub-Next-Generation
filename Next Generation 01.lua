@@ -4619,9 +4619,6 @@ if _G.Switch_Hub_Series_R then
 	elseif Evo_Race_V1_H then
 		Race_S:Set(' Race : '..tostring(game.Players.LocalPlayer.Data.Race.Value)..' : 1')
 	end
-    if not table.find(getgenv().Quest['Evo Race']['Select Race'],tostring(game.Players.LocalPlayer.Data.Race.Value)) and _G.Race['Lock Race'] then
-		Select_race_low  = true
-    end
 	-- Quest
 	spawn(function()
 		while wait(.1) do
