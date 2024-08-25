@@ -192,7 +192,7 @@ function library:AddWindow(text,keybind)
     ScrollTab.Parent = Tab
     ScrollTab.Active = true
     ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    ScrollTab.BackgroundTransparency = 1.000R
+    ScrollTab.BackgroundTransparency = 1.000
 
 	UserInputService.InputBegan:Connect(function(input)
 		if input.KeyCode == Enum.KeyCode[yoo] then
