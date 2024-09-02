@@ -2651,7 +2651,7 @@ spawn(function()
 		pcall(function()
 			if FastAttack then
 				AttackNoCD()
-				wait(_G.FastAttackSpeed)
+				
 			end
 		end)
 	end
