@@ -2246,7 +2246,7 @@ function CheckQuest()
         end
     end
     if ThirdSea then
-        if  GetData()[1] >= 1524 then
+        if  GetData()[1] <= 1524 then
             return {"Pirate Millionaire", "PiratePortQuest", 1, CFrame.new(-294, 48, 5604), CFrame.new(-288, 44, 5579)}
         elseif  GetData()[1] == 1525 or GetData()[1] <= 1574 then
             return {"Pistol Billionaire", "PiratePortQuest", 2, CFrame.new(-387, 128, 5974), CFrame.new(-288, 44, 5579)}
