@@ -2251,38 +2251,28 @@ function CheckQuest()
         elseif  GetData()[1] == 1525 or GetData()[1] <= 1574 then
             return {"Pistol Billionaire", "PiratePortQuest", 2, CFrame.new(-387, 128, 5974), CFrame.new(-288, 44, 5579)}
         elseif  GetData()[1] == 1575 or GetData()[1] <= 1599 then
-            if (Vector3.new(5834, 51, -1104) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Dragon Crew Warrior", "AmazonQuest", 1, CFrame.new(6212, 52, -1283), CFrame.new(5834, 51, -1104)}
         elseif  GetData()[1] == 1600 or GetData()[1] <= 1624 then
-            if (Vector3.new(5834, 51, -1104) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Dragon Crew Archer", "AmazonQuest", 2, CFrame.new(6617, 383, 160), CFrame.new(5834, 51, -1104)}
         elseif  GetData()[1] == 1625 or GetData()[1] <= 1649 then
-            if (Vector3.new(5447, 602, 750) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Female Islander", "AmazonQuest2", 1, CFrame.new(5704, 825, 1016), CFrame.new(5447, 602, 750)}
         elseif  GetData()[1] == 1650 or GetData()[1] <= 1699 then
-            if (Vector3.new(5447, 602, 750) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Giant Islanders", "AmazonQuest2", 2, CFrame.new(4944, 670, -22), CFrame.new(5447, 602, 750)}
         elseif  GetData()[1] == 1700 or GetData()[1] <= 1724 then
             return {"Marine Commodore", "MarineTreeIsland", 1, CFrame.new(2622, 134, -7563), CFrame.new(2183, 29, -6739)}
         elseif  GetData()[1] == 1725 or GetData()[1] <= 1774 then
             return {"Marine Rear Admiral", "MarineTreeIsland", 2, CFrame.new(3598, 161, -6984), CFrame.new(2183, 29, -6739)}
         elseif  GetData()[1] == 1775 or GetData()[1] <= 1799 then
-            if (Vector3.new(-10582, 332, -8759) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Fishman Raider", "DeepForestIsland3", 1, CFrame.new(-10440, 332, -8377), CFrame.new(-10582, 332, -8759)}
         elseif  GetData()[1] == 1800 or GetData()[1] <= 1824 then
-            if (Vector3.new(-10582, 332, -8759) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Fishman Captain", "DeepForestIsland3", 2, CFrame.new(-11035, 332, -9087), CFrame.new(-10582, 332, -8759)}
         elseif  GetData()[1] == 1825 or GetData()[1] <= 1849 then
-            if (Vector3.new(-13233, 332, -7627) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Forest Pirate", "DeepForestIsland", 1, CFrame.new(-13469, 412, -7816), CFrame.new(-13233, 332, -7627)}
         elseif  GetData()[1] == 1850 or GetData()[1] <= 1899 then
-            if (Vector3.new(-13233, 332, -7627) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Mythological Pirate", "DeepForestIsland", 2, CFrame.new(-13502, 578, -6983), CFrame.new(-13233, 332, -7627)}
         elseif  GetData()[1] == 1900 or GetData()[1] <= 1924 then
-            if (Vector3.new(-12684, 391, -9902) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Jungle Pirate", "DeepForestIsland2", 1, CFrame.new(-11838, 411, -10487), CFrame.new(-12684, 391, -9902)}
         elseif  GetData()[1] == 1925 or GetData()[1] <= 1974 then
-            if (Vector3.new(-12684, 391, -9902) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Musketeer Pirate", "DeepForestIsland2", 2, CFrame.new(-13452, 556, -10049), CFrame.new(-12684, 391, -9902)}
         elseif  GetData()[1] == 1975 or GetData()[1] <= 1999 then
             return {"Reborn Skeleton", "HauntedQuest1", 1, CFrame.new(-8764, 180, 6167), CFrame.new(-9480, 142, 5562)}
