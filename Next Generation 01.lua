@@ -56,12 +56,13 @@ end)
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2Sunz/Luciano-Trash/main/Fluent/master/Addons/InterfaceManager.lua"))()
+local Date = os.date("%A".." ".."%B".." ".."%d".." ".."%Y")
 
 local Window = Fluent:CreateWindow({
-    Title = "Luciano Hub",
-    SubTitle = "SCRIPT | BLOXFRUIT",
+    Title = "Love Hub",
+    SubTitle = "".. Date,
     TabWidth = 160,
-    Size = UDim2.fromOffset(500, 400),
+    Size = UDim2.fromOffset(580, 460),
     Acrylic = false,
     Theme = "Amethyst",
     MinimizeKey = Enum.KeyCode.Home
@@ -119,7 +120,7 @@ Toggle:OnChanged(function(Value)
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoFarmLevel or v.Humanoid.Health <= 0 or not v.Parent or not game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible
                                     BringMob = false
                                     FastAttack = false
@@ -158,7 +159,7 @@ Toggle:OnChanged(function(Value)
                                 v.Humanoid.WalkSpeed = 0
                                 v.Humanoid.JumpPower = 0
                                 PosMon = v.HumanoidRootPart.CFrame
-                                TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                             until not _G.AutoFarmNearest or v.Humanoid.Health <= 0 or not v.Parent
                             BringMobNearest = false
                             FastAttack = false
@@ -285,7 +286,7 @@ if FirstSea then
                                                         FastAttack = true
                                                         v.Humanoid.WalkSpeed = 0
                                                         v.Humanoid.JumpPower = 0
-                                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                                     until not _G.AutoSaber or v.Humanoid.Health <= 0 or not v.Parent
                                                     FastAttack = false
                                                 end
@@ -313,13 +314,13 @@ if FirstSea then
                                             FastAttack = true
                                             v.Humanoid.WalkSpeed = 0
                                             v.Humanoid.JumpPower = 0
-                                            TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                            TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                         until not _G.AutoSaber or v.Humanoid.Health <= 0 or not v.Parent
                                         FastAttack = false
                                     end
                                 end
                             else
-                                BypassTP(game:GetService("ReplicatedStorage")["Saber Expert"].HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                BypassTP(game:GetService("ReplicatedStorage")["Saber Expert"].HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                             end
                         end
                     end
@@ -343,7 +344,7 @@ if FirstSea then
                                         FastAttack = true
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoPole or v.Humanoid.Health <= 0 or not v.Parent
                                     FastAttack = false
                                 end
@@ -449,7 +450,7 @@ if FirstSea then
                                             FastAttack = true
                                             v.Humanoid.WalkSpeed = 0
                                             v.Humanoid.JumpPower = 0
-                                            TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                            TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                         until not _G.AutoSecondSea or v.Humanoid.Health <= 0 or not v.Parent
                                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
                                         FastAttack = false
@@ -491,14 +492,14 @@ if SecondSea then
                                             FastAttack = true
                                             v.Humanoid.WalkSpeed = 0
                                             v.Humanoid.JumpPower = 0
-                                            TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                            TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                         until not _G.AutoDeathStep or v.Humanoid.Health <= 0 or not v.Parent or game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Library Key") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Library Key")
                                         FastAttack = false
                                     end
                                 end
                             else
-                                BypassTP(game:GetService("ReplicatedStorage")["Awakened Ice Admiral"].HumanoidRootPart.CFrame * CFrame.new(0,30,0))
-                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("ReplicatedStorage")["Awakened Ice Admiral"].HumanoidRootPart.CFrame * CFrame.new(0,30,0)
+                                BypassTP(game:GetService("ReplicatedStorage")["Awakened Ice Admiral"].HumanoidRootPart.CFrame * CFrame.new(0,15,0))
+                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("ReplicatedStorage")["Awakened Ice Admiral"].HumanoidRootPart.CFrame * CFrame.new(0,15,0)
                             end
                         else
                             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
@@ -531,14 +532,14 @@ if SecondSea then
                                         FastAttack = true
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoSharkmanKarate or v.Humanoid.Health <= 0 or not v.Parent
                                     FastAttack = false
                                 end
                             end
                         else
-                            BypassTP(game:GetService("ReplicatedStorage")["Tide Keeper"].HumanoidRootPart.CFrame * CFrame.new(0,30,0))
-                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("ReplicatedStorage")["Tide Keeper"].HumanoidRootPart.CFrame * CFrame.new(0,30,0)
+                            BypassTP(game:GetService("ReplicatedStorage")["Tide Keeper"].HumanoidRootPart.CFrame * CFrame.new(0,15,0))
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("ReplicatedStorage")["Tide Keeper"].HumanoidRootPart.CFrame * CFrame.new(0,15,0)
                         end
                     end
                 end)
@@ -561,7 +562,7 @@ if SecondSea then
                                         FastAttack = true
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoFactory or v.Humanoid.Health <= 0 or not v.Parent
                                     FastAttack = false
                                 end
@@ -607,7 +608,7 @@ if SecondSea then
                                                     v.Humanoid.WalkSpeed = 0
                                                     v.Humanoid.JumpPower = 0 
                                                     PosMon = v.HumanoidRootPart.CFrame
-                                                    TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                                    TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                                 until not _G.AutoBartiloQuest or v.Humanoid.Health <= 0 or not v.Parent
                                                 BringMobNearest = false
                                                 FastAttack = false
@@ -635,13 +636,13 @@ if SecondSea then
                                                 FastAttack = true
                                                 v.Humanoid.WalkSpeed = 0
                                                 v.Humanoid.JumpPower = 0
-                                                TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                                TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                             until not _G.AutoBartiloQuest or v.Humanoid.Health <= 0 or not v.Parent
                                             FastAttack = false
                                         end
                                     end
                                 else
-                                    TP(game:GetService("ReplicatedStorage")["Jeremy"].HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                    TP(game:GetService("ReplicatedStorage")["Jeremy"].HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                 end
                             elseif game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 2 then
                                 game:GetService("Workspace").Map.Dressrosa.BartiloPlates.Plate1.Decal:Destroy()
@@ -802,13 +803,6 @@ end)
 local Input = Stats:AddInput("Input", { Title = "Blox Fruit", Default = 1275, Placeholder = "Placeholder", Numeric = false, Finished = false})
 Input:OnChanged(function(Value)
     _G.BloxFruitValue = Value
-end)
-
-local Section = Stats:AddSection("Fast Attack Speed")
-
-local Input = Stats:AddInput("Input", { Title = "Fast Attack", Default = 0.17, Placeholder = "Placeholder", Numeric = false, Finished = false})
-Input:OnChanged(function(Value)
-    _G.FastAttackSpeed = Value
 end)
 
 ------------------------------- [ Combat ] -------------------------------
@@ -1648,7 +1642,7 @@ if FirstSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoLeatherAndScrapMetal or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1680,7 +1674,7 @@ if FirstSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoMagmaOre or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1714,7 +1708,7 @@ if FirstSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                         if (Vector3.new(61121, 18, 1565) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61165, 10, 1820)) end
                                     until not _G.AutoFishTail or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
@@ -1746,7 +1740,7 @@ if FirstSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoAngelWings or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1782,7 +1776,7 @@ if SecondSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoLeatherAndScrapMetal or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1814,7 +1808,7 @@ if SecondSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoRadioactiveMaterial or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1846,7 +1840,7 @@ if SecondSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoVampireFang or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1878,7 +1872,7 @@ if SecondSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoMagmaOre or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1910,7 +1904,7 @@ if SecondSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoEctoplasm or v.Humanoid.Health <= 0 or not v.Parent
                                     UnEquip()
                                     BringMobNearest = false
@@ -1944,7 +1938,7 @@ if SecondSea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
                                         PosMon = v.HumanoidRootPart.CFrame
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoMysticDroplet or v.Humanoid.Health <= 0 or not v.Parent
                                     BringMobNearest = false
                                     FastAttack = false
@@ -1974,7 +1968,7 @@ if SecondSea then
                                         FastAttack = true
                                         v.Humanoid.WalkSpeed = 0
                                         v.Humanoid.JumpPower = 0
-                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                     until not _G.AutoDarkFragment or v.Humanoid.Health <= 0 or not v.Parent
                                     FastAttack = false
                                 end
@@ -1983,7 +1977,7 @@ if SecondSea then
                             if (Vector3.new(971, 125, 33245) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 5000 then 
                                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-6509, 85, -133)) 
                             end
-                            TP(game:GetService("ReplicatedStorage")["Darkbeard"].HumanoidRootPart.CFrame * CFrame.new(0,30,0)) 
+                            TP(game:GetService("ReplicatedStorage")["Darkbeard"].HumanoidRootPart.CFrame * CFrame.new(0,15,0)) 
                         end
                     end
                 end)
@@ -2115,7 +2109,7 @@ function CheckQuest()
                                     v.Humanoid.WalkSpeed = 0
                                     v.Humanoid.JumpPower = 0
                                     PosMonBypass = v.HumanoidRootPart.CFrame
-                                    TP(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                                    TP(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                 until not _G.AutoFarmLevel or v.Humanoid.Health <= 0
                                 BringMobBypass = false
                                 FastAttack = false
@@ -2251,28 +2245,38 @@ function CheckQuest()
         elseif  GetData()[1] == 1525 or GetData()[1] <= 1574 then
             return {"Pistol Billionaire", "PiratePortQuest", 2, CFrame.new(-387, 128, 5974), CFrame.new(-288, 44, 5579)}
         elseif  GetData()[1] == 1575 or GetData()[1] <= 1599 then
+            if (Vector3.new(5834, 51, -1104) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Dragon Crew Warrior", "AmazonQuest", 1, CFrame.new(6212, 52, -1283), CFrame.new(5834, 51, -1104)}
         elseif  GetData()[1] == 1600 or GetData()[1] <= 1624 then
+            if (Vector3.new(5834, 51, -1104) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Dragon Crew Archer", "AmazonQuest", 2, CFrame.new(6617, 383, 160), CFrame.new(5834, 51, -1104)}
         elseif  GetData()[1] == 1625 or GetData()[1] <= 1649 then
+            if (Vector3.new(5447, 602, 750) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Female Islander", "AmazonQuest2", 1, CFrame.new(5704, 825, 1016), CFrame.new(5447, 602, 750)}
         elseif  GetData()[1] == 1650 or GetData()[1] <= 1699 then
+            if (Vector3.new(5447, 602, 750) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5017, 606, 346)) end
             return {"Giant Islanders", "AmazonQuest2", 2, CFrame.new(4944, 670, -22), CFrame.new(5447, 602, 750)}
         elseif  GetData()[1] == 1700 or GetData()[1] <= 1724 then
             return {"Marine Commodore", "MarineTreeIsland", 1, CFrame.new(2622, 134, -7563), CFrame.new(2183, 29, -6739)}
         elseif  GetData()[1] == 1725 or GetData()[1] <= 1774 then
             return {"Marine Rear Admiral", "MarineTreeIsland", 2, CFrame.new(3598, 161, -6984), CFrame.new(2183, 29, -6739)}
         elseif  GetData()[1] == 1775 or GetData()[1] <= 1799 then
+            if (Vector3.new(-10582, 332, -8759) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Fishman Raider", "DeepForestIsland3", 1, CFrame.new(-10440, 332, -8377), CFrame.new(-10582, 332, -8759)}
         elseif  GetData()[1] == 1800 or GetData()[1] <= 1824 then
+            if (Vector3.new(-10582, 332, -8759) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Fishman Captain", "DeepForestIsland3", 2, CFrame.new(-11035, 332, -9087), CFrame.new(-10582, 332, -8759)}
         elseif  GetData()[1] == 1825 or GetData()[1] <= 1849 then
+            if (Vector3.new(-13233, 332, -7627) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Forest Pirate", "DeepForestIsland", 1, CFrame.new(-13469, 412, -7816), CFrame.new(-13233, 332, -7627)}
         elseif  GetData()[1] == 1850 or GetData()[1] <= 1899 then
+            if (Vector3.new(-13233, 332, -7627) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Mythological Pirate", "DeepForestIsland", 2, CFrame.new(-13502, 578, -6983), CFrame.new(-13233, 332, -7627)}
         elseif  GetData()[1] == 1900 or GetData()[1] <= 1924 then
+            if (Vector3.new(-12684, 391, -9902) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Jungle Pirate", "DeepForestIsland2", 1, CFrame.new(-11838, 411, -10487), CFrame.new(-12684, 391, -9902)}
         elseif  GetData()[1] == 1925 or GetData()[1] <= 1974 then
+            if (Vector3.new(-12684, 391, -9902) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-12550, 342, -7470)) end
             return {"Musketeer Pirate", "DeepForestIsland2", 2, CFrame.new(-13452, 556, -10049), CFrame.new(-12684, 391, -9902)}
         elseif  GetData()[1] == 1975 or GetData()[1] <= 1999 then
             return {"Reborn Skeleton", "HauntedQuest1", 1, CFrame.new(-8764, 180, 6167), CFrame.new(-9480, 142, 5562)}
@@ -2343,11 +2347,18 @@ function TP(P)
                     R.Anchored = true
                     R.Transparency = 1
                     R.CanCollide = false
-                    R.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,30,0)
+                    R.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
                 end
                 if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - P.Position).Magnitude <= 100 then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = P
                 end
+            else
+                game:service("TweenService"):Create(
+                    game.Players.LocalPlayer.Character.Root,
+                    TweenInfo.new((game.Players.LocalPlayer.Character.Root.Position - P.Position).Magnitude/315, Enum.EasingStyle.Linear),
+                    {CFrame = P}
+                ):Stop()
+                wait(4)
             end
         end)
     end)
@@ -2385,12 +2396,12 @@ spawn(function()
                     BodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000)
                     BodyVelocity.Velocity = Vector3.new(0, 0, 0)
                 elseif not game.Players.LocalPlayer.Character:FindFirstChild("Highlight") then
-                    local Highlight = Instance.new("Highlight")
-                    Highlight.FillTransparency = 0.5
-                    Highlight.FillColor = Color3.fromRGB(0, 255, 0)
-                    Highlight.OutlineColor = Color3.fromRGB(0, 255, 0)
-                    Highlight.FillTransparency = 0.5
-                    Highlight.Parent = game.Players.LocalPlayer.Character
+                        local Highlight = Instance.new("Highlight")
+                        Highlight.FillTransparency = 0.5
+                        Highlight.FillColor = Color3.fromRGB(0, 255, 0)
+                        Highlight.OutlineColor = Color3.fromRGB(0, 255, 0)
+                        Highlight.FillTransparency = 0.5
+                        Highlight.Parent = game.Players.LocalPlayer.Character
                 end
                 if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buso")
@@ -2430,11 +2441,11 @@ spawn(function()
     while task.wait() do
         pcall(function()
             for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                if BringMobBypass then
-                    if v.Name == "Shanda" and (v.HumanoidRootPart.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 250 then
+                if BringMobNearest then
+                    if (v.HumanoidRootPart.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 250 then
                         v.Humanoid.JumpPower = 0
                         v.Humanoid.WalkSpeed = 0
-                        v.HumanoidRootPart.CFrame = PosMonBypass
+                        v.HumanoidRootPart.CFrame = PosMon
                         sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
                     end
                 end
@@ -2446,11 +2457,11 @@ spawn(function()
     while task.wait() do
         pcall(function()
             for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                if BringMobNearest then
-                    if (v.HumanoidRootPart.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 250 then
+                if BringMobBypass then
+                    if v.Name == "Shanda" and (v.HumanoidRootPart.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 250 then
                         v.Humanoid.JumpPower = 0
                         v.Humanoid.WalkSpeed = 0
-                        v.HumanoidRootPart.CFrame = PosMon
+                        v.HumanoidRootPart.CFrame = PosMonBypass
                         sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
                     end
                 end
@@ -2641,7 +2652,6 @@ spawn(function()
 		pcall(function()
 			if FastAttack then
 				AttackNoCD()
-				
 			end
 		end)
 	end
