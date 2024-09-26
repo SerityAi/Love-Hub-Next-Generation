@@ -1,3 +1,5 @@
+local Windows = library:AddWindow("️Love Hub [ Next Generation ]", "http://www.roblox.com/asset/?id=17170148384", Color3.fromRGB(255,0,0), Enum.KeyCode.RightControl)
+
 do
 	local ui = game.CoreGui:FindFirstChild("Love Hub")
 	if ui then
